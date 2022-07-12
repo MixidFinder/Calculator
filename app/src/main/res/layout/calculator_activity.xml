@@ -10,13 +10,15 @@
         android:id="@+id/textCount"
         android:layout_width="match_parent"
         android:layout_height="246dp"
-        android:text="@string/count" />
+        android:text="@string/count"
+        android:textColor="@color/yellow" />
 
     <TextView
         android:id="@+id/textResult"
         android:layout_width="match_parent"
         android:layout_height="246dp"
-        android:text="@string/result" />
+        android:text="@string/result"
+        android:textColor="@color/yellow" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -190,8 +192,8 @@
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="fill"
             android:layout_columnSpan="2"
+            android:layout_gravity="fill"
             android:text="@string/equals"
             android:textColor="@color/yellow" />
     </GridLayout>
