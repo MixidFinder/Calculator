@@ -2,21 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/dark_grey"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="60">
 
     <TextView
         android:id="@+id/textCount"
         android:layout_width="match_parent"
-        android:layout_height="246dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
         android:text="@string/count"
         android:textColor="@color/yellow" />
 
     <TextView
         android:id="@+id/textResult"
         android:layout_width="match_parent"
-        android:layout_height="246dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
         android:text="@string/result"
         android:textColor="@color/yellow" />
 
@@ -25,7 +28,7 @@
         android:layout_height="wrap_content"
         android:columnCount="4">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonClear"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -34,7 +37,7 @@
             android:text="@string/clear"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDivide"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -43,7 +46,7 @@
             android:text="@string/divide"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMultiply"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -52,7 +55,7 @@
             android:text="@string/multiply"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonBackspace"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -61,7 +64,7 @@
             android:text="@string/backspace"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -70,7 +73,7 @@
             android:text="@string/_1"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -79,7 +82,7 @@
             android:text="@string/_2"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -88,7 +91,7 @@
             android:text="@string/_3"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMinus"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -97,7 +100,7 @@
             android:text="@string/minus"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -106,7 +109,7 @@
             android:text="@string/_4"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -115,7 +118,7 @@
             android:text="@string/_5"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -124,7 +127,7 @@
             android:text="@string/_6"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPlus"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -133,7 +136,7 @@
             android:text="@string/plus"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button7"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -142,7 +145,7 @@
             android:text="@string/_7"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -151,7 +154,7 @@
             android:text="@string/_8"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -160,7 +163,7 @@
             android:text="@string/_9"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPercent"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -169,7 +172,7 @@
             android:text="@string/percent"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -178,7 +181,7 @@
             android:text="@string/_0"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDot"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
@@ -187,7 +190,7 @@
             android:text="@string/dot"
             android:textColor="@color/yellow" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonEquals"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
